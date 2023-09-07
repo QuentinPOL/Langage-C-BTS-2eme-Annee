@@ -117,8 +117,17 @@ void displayTab(int* tab, int lastIndex, int* valueResearch)
 
 
 // EXO 3 TP 1
-int addStudent(student* tabStudent, int studentPresent)
+int addStudent(student* tabStudent, int *studentPresent)
 {
+    char continueSaisi;
+
+    do
+    {
+        printf("Voulez vous re saisir a nouveau un eleve ? (0 = Non et 1 = Oui) : ");
+        scanf("%c", &continueSaisi);
+
+    } while (continueSaisi != 48);
+
     return 0;
 }
 
@@ -127,5 +136,24 @@ void displayStudent(student* tabStudent, int studentPresent)
     for (int i = 0; i < studentPresent; i++)
     {
         printf("Eleve numero %d : s appelle %s %s, habite a l adresse %s et il en classe %s", i+1, tabStudent[i].firstname, tabStudent[i].name, tabStudent[i].adress, tabStudent[i].classroom);
+    }
+}
+
+int saveStudent(student* tabStudent)
+{
+    return 0;
+}
+
+void loadStudent(student* tabStudent)
+{
+    printf("MCG UWU");
+}
+
+void viderBuffer()
+{
+    int c = 0;
+    while (c != '\n' && c != EOF)
+    {
+        c = getchar();
     }
 }
