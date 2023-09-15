@@ -15,7 +15,7 @@ int main(int agrc, char ** argv)
 	printf("%p", ptr);
 	*/
 
-	/// -> EXO 1 =  Cela nous renvoie l'adresse du pointeur
+	/// -> EXO 1 =  Cela nous renvoie ERREUR l'adresse du pointeur
 
 	// Exo 2
 
