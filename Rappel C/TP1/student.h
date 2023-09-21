@@ -2,9 +2,9 @@
 
 typedef struct
 {
-	char firstname[10];
-	char name[10];
-	char adress[30];
-	char classroom[10];
+	char firstname[20];
+	char name[20];
+	char adress[50];
+	char classroom[6];
 }
 student;
